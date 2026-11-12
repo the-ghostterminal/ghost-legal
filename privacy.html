@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ghost Terminal Publisher — Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="brand">The_GhostTerminal</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+</header>
+
+<main>
+<h1>Privacy Policy</h1>
+<p class="updated">Effective 12 November 2026 · applies to Ghost Terminal Publisher</p>
+
+<p class="lede">
+  Ghost Terminal Publisher is a private tool used by one person to publish
+  videos to that person's own YouTube channel. It is not a service offered to
+  the public, it has no end users other than its operator, and it does not sell,
+  rent or share data.
+</p>
+
+<h2>1. Who is responsible</h2>
+<p>
+  The operator of the YouTube channel
+  <a href="https://www.youtube.com/@the_ghostterminal">The_GhostTerminal</a>,
+  reachable at
+  <a href="mailto:46752934+the-ghostterminal@users.noreply.github.com">46752934+the-ghostterminal@users.noreply.github.com</a>.
+</p>
+
+<h2>2. What Google user data is accessed</h2>
+<p>Only after the operator grants consent through Google's OAuth screen, and only for the operator's own Google account:</p>
+<table>
+  <thead><tr><th>Scope</th><th>Data</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>youtube.upload</code></td>
+      <td>Permission to upload video files and set thumbnails on the operator's channel</td>
+      <td>Publishing the operator's own videos</td>
+    </tr>
+    <tr>
+      <td><code>youtube.readonly</code></td>
+      <td>Channel identity, the channel's own video list, and per-video public counts (views, likes, comments)</td>
+      <td>Confirming an upload succeeded and reporting performance</td>
+    </tr>
+    <tr>
+      <td><code>youtube.force-ssl</code></td>
+      <td>Permission to update metadata (title, description, tags, visibility) on the operator's own videos</td>
+      <td>Correcting or completing a published video's details</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  No other Google user data is requested. The tool never requests access to
+  Gmail, Drive, Contacts, Calendar, watch history or any other Google service.
+</p>
+
+<h2>3. How the data is used</h2>
+<p>
+  Google user data is used for exactly one purpose: publishing and managing the
+  operator's own videos on the operator's own channel, and reading the resulting
+  public statistics back. It is never used for advertising, profiling,
+  resale, model training or any secondary purpose.
+</p>
+
+<h2>4. How the data is stored</h2>
+<ul>
+  <li>The OAuth client credentials and refresh token are stored in a single
+      file on the operator's computer, readable only by the operator's operating
+      system account (file mode <code>0600</code>).</li>
+  <li>No Google user data is sent to any server operated by this project. There
+      is no backend, no database and no cloud storage.</li>
+  <li>Video files are read from local disk and streamed directly to YouTube.
+      They are not copied anywhere else.</li>
+  <li>API responses (video titles and aggregate counts) are shown to the
+      operator in a terminal and may be written to local logs on the same
+      machine.</li>
+</ul>
+
+<h2>5. Sharing and disclosure</h2>
+<p>
+  Google user data is <strong>not shared, sold, transferred or disclosed</strong>
+  to any third party, except as required by law. The only destination for the
+  data is Google's own YouTube Data API.
+</p>
+
+<h2>6. Retention and deletion</h2>
+<ul>
+  <li>Local tokens are kept until the operator deletes them
+      (<code>yt-auth --revoke</code> removes the file).</li>
+  <li>Authorization can be revoked at any time at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>;
+      revocation stops all further API access immediately.</li>
+  <li>Local logs can be deleted by the operator at any time; they contain no
+      third-party personal data.</li>
+  <li>Deleting a token file does not delete anything on YouTube. Videos and their
+      metadata are removed through YouTube Studio, by the channel owner.</li>
+</ul>
+
+<h2>7. Google API Services User Data Policy — Limited Use</h2>
+<p>
+  Ghost Terminal Publisher's use and transfer of information received from
+  Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the <strong>Limited Use</strong> requirements. Specifically:
+</p>
+<ul>
+  <li>Data is used only to provide the single publishing feature described above.</li>
+  <li>Data is not transferred to third parties except as necessary to provide
+      that feature, to comply with applicable law, or as part of a merger or
+      acquisition with prior notice.</li>
+  <li>Data is not used for serving advertisements, including personalised or
+      retargeted advertising.</li>
+  <li>Data is not used to determine creditworthiness or for lending purposes.</li>
+  <li>Humans do not read the data, except where the operator is the human
+      reading their own data, or where required for security, legal compliance
+      or with explicit consent.</li>
+</ul>
+
+<h2>8. Security</h2>
+<p>
+  Credentials live in a permission-restricted local file, all API traffic uses
+  HTTPS, and the tool requests the narrowest scopes that can do the job. No
+  credential is ever transmitted to a third party. Access tokens are held in
+  memory or a short-lived local cache and expire within an hour.
+</p>
+
+<h2>9. Children</h2>
+<p>
+  The tool is not directed to children and has no users other than its adult
+  operator. It collects no data from any third party, including children.
+</p>
+
+<h2>10. Changes to this policy</h2>
+<p>
+  If this policy changes, the revised version is published on this page with a
+  new effective date.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+  Questions or deletion requests:
+  <a href="mailto:46752934+the-ghostterminal@users.noreply.github.com">46752934+the-ghostterminal@users.noreply.github.com</a>
+</p>
+
+<h2>Related</h2>
+<ul>
+  <li><a href="terms.html">Terms of Service</a></li>
+  <li><a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a></li>
+  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></li>
+</ul>
+</main>
+
+<footer>
+  <p>Ghost Terminal Publisher · The_GhostTerminal ·
+     <a href="index.html">Home</a> · <a href="terms.html">Terms</a></p>
+</footer>
+</body>
+</html>

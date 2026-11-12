@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ghost Terminal Publisher — home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="brand">The_GhostTerminal</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+</header>
+
+<main>
+<h1>Ghost Terminal Publisher</h1>
+
+<p class="lede">
+  A private, single-operator publishing tool. It takes short educational videos
+  that the channel owner has already produced and uploads them to that same
+  owner's YouTube channel through the YouTube Data API.
+</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Uploads video files from the operator's own machine to the operator's own
+      YouTube channel.</li>
+  <li>Sets the title, description, tags and category on those uploads.</li>
+  <li>Uploads a custom thumbnail for those videos.</li>
+  <li>Reads back the channel's own video list and per-video statistics
+      (views, likes, comments) so the operator can see what performed.</li>
+</ul>
+
+<h2>Who can use it</h2>
+<p>
+  One person: the owner of the YouTube channel
+  <a href="https://www.youtube.com/@the_ghostterminal">The_GhostTerminal</a>.
+  There is no sign-up, no user accounts and no public interface. The tool runs
+  locally on the operator's computer, and the only Google account it can ever
+  reach is the one the operator explicitly authorizes through Google's own
+  OAuth consent screen.
+</p>
+
+<h2>What it does not do</h2>
+<ul>
+  <li>It does not access any other channel's private data.</li>
+  <li>It does not upload, comment, message or interact on anyone else's behalf.</li>
+  <li>It does not read viewers' personal information, watch history or emails.</li>
+  <li>It does not collect analytics beyond the aggregate counts YouTube
+      returns for the operator's own videos.</li>
+  <li>It has no advertising, no tracking pixels and no third-party analytics.</li>
+</ul>
+
+<h2>How it connects to Google</h2>
+<p>
+  Authorization uses Google OAuth 2.0 with the following scopes:
+  <code>youtube.upload</code>, <code>youtube.readonly</code> and
+  <code>youtube.force-ssl</code>. The resulting token is stored only on the
+  operator's machine and can be revoked at any time from the
+  <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>.
+  Details are in the <a href="privacy.html">Privacy Policy</a>.
+</p>
+
+<h2>Compliance</h2>
+<p>
+  This application uses <strong>YouTube API Services</strong>. By using it, the
+  operator is bound by the
+  <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a>
+  and the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+  See also our <a href="terms.html">Terms of Service</a>.
+</p>
+
+<h2>Contact</h2>
+<p>
+  <a href="mailto:46752934+the-ghostterminal@users.noreply.github.com">46752934+the-ghostterminal@users.noreply.github.com</a>
+</p>
+
+<p class="updated">Last updated: 12 November 2026</p>
+</main>
+
+<footer>
+  <p>Ghost Terminal Publisher · The_GhostTerminal ·
+     <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+</footer>
+</body>
+</html>
