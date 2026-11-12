@@ -9,5 +9,5 @@ Publisher** (the `youtube-mcp` tool in `~/mcp/youtube-mcp`).
 | `privacy.html` | Application privacy policy (with Google Limited Use disclosure) |
 | `terms.html` | Application terms of service |
 
-Served by GitHub Pages at `https://escanor155.github.io/ghost-legal/`.
+Served by GitHub Pages at `https://the-ghostterminal.github.io/ghost-legal/`.
 Source of truth is this folder on the box; push to republish.
